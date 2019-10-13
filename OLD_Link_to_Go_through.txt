@@ -1,0 +1,12 @@
+https://davemateer.com/2018/11/07/Azure-Functions-to-Count-Downloads-from-Blob-Storage
+https://stackoverflow.com/questions/6861865/getting-blob-count-in-an-azure-storage-container
+
+https://docs.docker.com/docker-for-windows/
+
+https://docs.microsoft.com/en-us/azure/iot-edge/quickstart
+https://docs.microsoft.com/en-us/azure/iot-edge/tutorial-develop-for-windows
+https://docs.microsoft.com/en-us/azure/iot-edge/iot-edge-as-gateway
+
+https://developercommunity.visualstudio.com/content/problem/91939/deleting-cprogramdatamicrosoftvisual-studiopackage.html
+
+https://download.docker.com/win/stable/Docker%20for%20Windows%20Installer.exe

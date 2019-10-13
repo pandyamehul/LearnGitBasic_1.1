@@ -1,0 +1,820 @@
+
+C:\Mehul\SW Setups\PortableGit-2.21.0-64-bit>cd\
+
+C:\>cd Mehul]
+The system cannot find the path specified.
+
+C:\>cd Mehul
+
+C:\Mehul>cd Local_GitRepo
+
+C:\Mehul\Local_GitRepo>git init
+Initialized empty Git repository in C:/Mehul/Local_GitRepo/.git/
+
+C:\Mehul\Local_GitRepo>git status
+On branch master
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+
+C:\Mehul\Local_GitRepo>git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        LearnGitBasics.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\Mehul\Local_GitRepo>git /?
+git: '/?' is not a git command. See 'git --help'.
+
+The most similar commands are
+        am
+        gc
+        mv
+        p4
+        rm
+
+C:\Mehul\Local_GitRepo>git --help
+usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           <command> [<args>]
+
+These are common Git commands used in various situations:
+
+start a working area (see also: git help tutorial)
+   clone      Clone a repository into a new directory
+   init       Create an empty Git repository or reinitialize an existing one
+
+work on the current change (see also: git help everyday)
+   add        Add file contents to the index
+   mv         Move or rename a file, a directory, or a symlink
+   reset      Reset current HEAD to the specified state
+   rm         Remove files from the working tree and from the index
+
+examine the history and state (see also: git help revisions)
+   bisect     Use binary search to find the commit that introduced a bug
+   grep       Print lines matching a pattern
+   log        Show commit logs
+   show       Show various types of objects
+   status     Show the working tree status
+
+grow, mark and tweak your common history
+   branch     List, create, or delete branches
+   checkout   Switch branches or restore working tree files
+   commit     Record changes to the repository
+   diff       Show changes between commits, commit and working tree, etc
+   merge      Join two or more development histories together
+   rebase     Reapply commits on top of another base tip
+   tag        Create, list, delete or verify a tag object signed with GPG
+
+collaborate (see also: git help workflows)
+   fetch      Download objects and refs from another repository
+   pull       Fetch from and integrate with another repository or a local branch
+   push       Update remote refs along with associated objects
+
+'git help -a' and 'git help -g' list available subcommands and some
+concept guides. See 'git help <command>' or 'git help <concept>'
+to read about a specific subcommand or concept.
+
+C:\Mehul\Local_GitRepo>git add *.txt
+
+C:\Mehul\Local_GitRepo>git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   LearnGitBasics.txt
+
+
+C:\Mehul\Local_GitRepo>git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   LearnGitBasics.txt
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   LearnGitBasics.txt
+
+
+C:\Mehul\Local_GitRepo>git commit --help
+
+C:\Mehul\Local_GitRepo>git commit -m "First Commit"
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'Unmanaged@DESKTOP-L2LR5TD.(none)')
+
+C:\Mehul\Local_GitRepo>git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   LearnGitBasics.txt
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   LearnGitBasics.txt
+
+
+C:\Mehul\Local_GitRepo>git add *.txt
+
+C:\Mehul\Local_GitRepo>git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   LearnGitBasics.txt
+
+
+C:\Mehul\Local_GitRepo>git commit -m "First Commit"
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'Unmanaged@DESKTOP-L2LR5TD.(none)')
+
+C:\Mehul\Local_GitRepo>git config --global user.name "pandyamehul"
+
+C:\Mehul\Local_GitRepo>git commit -m "First Commit"
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'Unmanaged@DESKTOP-L2LR5TD.(none)')
+
+C:\Mehul\Local_GitRepo>Omit --global
+'Omit' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Mehul\Local_GitRepo>git commit -m "First Commit"
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'Unmanaged@DESKTOP-L2LR5TD.(none)')
+
+C:\Mehul\Local_GitRepo>git config --global user.email "pandya.mehul@live.com"
+
+C:\Mehul\Local_GitRepo>git commit -m "First Commit"
+[master (root-commit) 9169c11] First Commit
+ 1 file changed, 6 insertions(+)
+ create mode 100644 LearnGitBasics.txt
+
+C:\Mehul\Local_GitRepo>git status
+On branch master
+nothing to commit, working tree clean
+
+C:\Mehul\Local_GitRepo>git commit -m "First Commit"
+On branch master
+nothing to commit, working tree clean
+
+C:\Mehul\Local_GitRepo>git log
+commit 9169c1155169d906769e3683301dbe283676ed59 (HEAD -> master)
+Author: pandyamehul <pandya.mehul@live.com>
+Date:   Sat Mar 23 14:25:52 2019 +0100
+
+    First Commit
+
+C:\Mehul\Local_GitRepo>git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   LearnGitBasics.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+C:\Mehul\Local_GitRepo>git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   LearnGitBasics.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        File1.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+C:\Mehul\Local_GitRepo>git add *.txt
+
+C:\Mehul\Local_GitRepo>git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   File1.txt
+        modified:   LearnGitBasics.txt
+
+
+C:\Mehul\Local_GitRepo>git commit -m "2nd Commit: Updated File LearnGitBasic.txt and added new file File1.txt"
+[master cf3f7cc] 2nd Commit: Updated File LearnGitBasic.txt and added new file File1.txt
+ 2 files changed, 12 insertions(+)
+ create mode 100644 File1.txt
+
+C:\Mehul\Local_GitRepo>git status
+On branch master
+nothing to commit, working tree clean
+
+C:\Mehul\Local_GitRepo>git log
+commit cf3f7cc0ecf26ada50112c8ddcff2b8f67fcd1f6 (HEAD -> master)
+Author: pandyamehul <pandya.mehul@live.com>
+Date:   Sat Mar 23 14:34:09 2019 +0100
+
+    2nd Commit: Updated File LearnGitBasic.txt and added new file File1.txt
+
+commit 9169c1155169d906769e3683301dbe283676ed59
+Author: pandyamehul <pandya.mehul@live.com>
+Date:   Sat Mar 23 14:25:52 2019 +0100
+
+    First Commit
+
+C:\Mehul\Local_GitRepo>git add *.txt
+
+C:\Mehul\Local_GitRepo>git commit "3rd Commit: Updated File LearnGitBasic.txt"
+error: pathspec '3rd Commit: Updated File LearnGitBasic.txt' did not match any file(s) known to git
+
+C:\Mehul\Local_GitRepo>git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        modified:   LearnGitBasics.txt
+
+
+C:\Mehul\Local_GitRepo>git commit -m "3rd Commit: Updated File LearnGitBasic.txt"
+[master 8d161d5] 3rd Commit: Updated File LearnGitBasic.txt
+ 1 file changed, 6 insertions(+)
+
+C:\Mehul\Local_GitRepo>git status
+On branch master
+nothing to commit, working tree clean
+
+C:\Mehul\Local_GitRepo>git status
+On branch master
+nothing to commit, working tree clean
+
+C:\Mehul\Local_GitRepo>git log
+commit 8d161d52311414aab18cd4ce209adcb272cd1951 (HEAD -> master)
+Author: pandyamehul <pandya.mehul@live.com>
+Date:   Sat Mar 23 14:41:28 2019 +0100
+
+    3rd Commit: Updated File LearnGitBasic.txt
+
+commit cf3f7cc0ecf26ada50112c8ddcff2b8f67fcd1f6
+Author: pandyamehul <pandya.mehul@live.com>
+Date:   Sat Mar 23 14:34:09 2019 +0100
+
+    2nd Commit: Updated File LearnGitBasic.txt and added new file File1.txt
+
+commit 9169c1155169d906769e3683301dbe283676ed59
+Author: pandyamehul <pandya.mehul@live.com>
+Date:   Sat Mar 23 14:25:52 2019 +0100
+
+    First Commit
+
+C:\Mehul\Local_GitRepo>git remote add origin https://github.com/pandyamehul/StartGitLvl1.git
+
+C:\Mehul\Local_GitRepo>git remote -v
+origin  https://github.com/pandyamehul/StartGitLvl1.git (fetch)
+origin  https://github.com/pandyamehul/StartGitLvl1.git (push)
+
+C:\Mehul\Local_GitRepo>git push -u origin master
+Enumerating objects: 10, done.
+Counting objects: 100% (10/10), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (10/10), 1.30 KiB | 442.00 KiB/s, done.
+Total 10 (delta 2), reused 10 (delta 2)
+remote: Resolving deltas: 100% (2/2), done.
+To https://github.com/pandyamehul/StartGitLvl1.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+C:\Mehul\Local_GitRepo>git add *.txt
+
+C:\Mehul\Local_GitRepo>git add *.txt
+
+C:\Mehul\Local_GitRepo>git add *.txt
+
+C:\Mehul\Local_GitRepo>git commit "#4 Commit: Updated File LearnGitBasic.txt"
+error: pathspec '#4 Commit: Updated File LearnGitBasic.txt' did not match any file(s) known to git
+
+C:\Mehul\Local_GitRepo>git commit -m "#4 Commit: Updated File LearnGitBasic.txt"
+[master 714c759] #4 Commit: Updated File LearnGitBasic.txt
+ 1 file changed, 13 insertions(+)
+
+C:\Mehul\Local_GitRepo>git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+C:\Mehul\Local_GitRepo>git log
+commit 714c7596864ea388a6c36f7394f6c4a14397cd4c (HEAD -> master)
+Author: pandyamehul <pandya.mehul@live.com>
+Date:   Sat Mar 23 15:59:19 2019 +0100
+
+    #4 Commit: Updated File LearnGitBasic.txt
+
+commit 8d161d52311414aab18cd4ce209adcb272cd1951 (origin/master)
+Author: pandyamehul <pandya.mehul@live.com>
+Date:   Sat Mar 23 14:41:28 2019 +0100
+
+    3rd Commit: Updated File LearnGitBasic.txt
+
+commit cf3f7cc0ecf26ada50112c8ddcff2b8f67fcd1f6
+Author: pandyamehul <pandya.mehul@live.com>
+Date:   Sat Mar 23 14:34:09 2019 +0100
+
+    2nd Commit: Updated File LearnGitBasic.txt and added new file File1.txt
+
+commit 9169c1155169d906769e3683301dbe283676ed59
+Author: pandyamehul <pandya.mehul@live.com>
+Date:   Sat Mar 23 14:25:52 2019 +0100
+
+    First Commit
+
+C:\Mehul\Local_GitRepo>git push -u origin master
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 590 bytes | 295.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/pandyamehul/StartGitLvl1.git
+   8d161d5..714c759  master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+C:\Mehul\Local_GitRepo>git version
+git version 2.21.0.windows.1
+
+C:\Mehul\Local_GitRepo>git log
+commit 714c7596864ea388a6c36f7394f6c4a14397cd4c (HEAD -> master, origin/master)
+Author: pandyamehul <pandya.mehul@live.com>
+Date:   Sat Mar 23 15:59:19 2019 +0100
+
+    #4 Commit: Updated File LearnGitBasic.txt
+
+commit 8d161d52311414aab18cd4ce209adcb272cd1951
+Author: pandyamehul <pandya.mehul@live.com>
+Date:   Sat Mar 23 14:41:28 2019 +0100
+
+    3rd Commit: Updated File LearnGitBasic.txt
+
+commit cf3f7cc0ecf26ada50112c8ddcff2b8f67fcd1f6
+Author: pandyamehul <pandya.mehul@live.com>
+Date:   Sat Mar 23 14:34:09 2019 +0100
+
+    2nd Commit: Updated File LearnGitBasic.txt and added new file File1.txt
+
+commit 9169c1155169d906769e3683301dbe283676ed59
+Author: pandyamehul <pandya.mehul@live.com>
+Date:   Sat Mar 23 14:25:52 2019 +0100
+
+    First Commit
+
+C:\Mehul\Local_GitRepo>git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+C:\Mehul\Local_GitRepo>git log
+commit 714c7596864ea388a6c36f7394f6c4a14397cd4c (HEAD -> master, origin/master)
+Author: pandyamehul <pandya.mehul@live.com>
+Date:   Sat Mar 23 15:59:19 2019 +0100
+
+    #4 Commit: Updated File LearnGitBasic.txt
+
+commit 8d161d52311414aab18cd4ce209adcb272cd1951
+Author: pandyamehul <pandya.mehul@live.com>
+Date:   Sat Mar 23 14:41:28 2019 +0100
+
+    3rd Commit: Updated File LearnGitBasic.txt
+
+commit cf3f7cc0ecf26ada50112c8ddcff2b8f67fcd1f6
+Author: pandyamehul <pandya.mehul@live.com>
+Date:   Sat Mar 23 14:34:09 2019 +0100
+
+    2nd Commit: Updated File LearnGitBasic.txt and added new file File1.txt
+
+commit 9169c1155169d906769e3683301dbe283676ed59
+Author: pandyamehul <pandya.mehul@live.com>
+Date:   Sat Mar 23 14:25:52 2019 +0100
+
+    First Commit
+
+C:\Mehul\Local_GitRepo>git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+C:\Mehul\Local_GitRepo>git fetch origin master
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+From https://github.com/pandyamehul/StartGitLvl1
+ * branch            master     -> FETCH_HEAD
+   714c759..68d5cab  master     -> origin/master
+
+C:\Mehul\Local_GitRepo>git status
+On branch master
+Your branch is behind 'origin/master' by 1 commit, and can be fast-forwarded.
+  (use "git pull" to update your local branch)
+
+nothing to commit, working tree clean
+
+C:\Mehul\Local_GitRepo>git merge origin/master
+Updating 714c759..68d5cab
+Fast-forward
+ LearnGitBasics.txt | 4 ++++
+ 1 file changed, 4 insertions(+)
+
+C:\Mehul\Local_GitRepo>git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+C:\Mehul\Local_GitRepo>git pull origin master
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+From https://github.com/pandyamehul/StartGitLvl1
+ * branch            master     -> FETCH_HEAD
+   68d5cab..4c206ba  master     -> origin/master
+Updating 68d5cab..4c206ba
+Fast-forward
+ LearnGitBasics.txt | 13 +++++++++++++
+ 1 file changed, 13 insertions(+)
+
+C:\Mehul\Local_GitRepo>git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+C:\Mehul\Local_GitRepo>git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+C:\Mehul\Local_GitRepo>git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+C:\Mehul\Local_GitRepo>git --help
+usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           <command> [<args>]
+
+These are common Git commands used in various situations:
+
+start a working area (see also: git help tutorial)
+   clone      Clone a repository into a new directory
+   init       Create an empty Git repository or reinitialize an existing one
+
+work on the current change (see also: git help everyday)
+   add        Add file contents to the index
+   mv         Move or rename a file, a directory, or a symlink
+   reset      Reset current HEAD to the specified state
+   rm         Remove files from the working tree and from the index
+
+examine the history and state (see also: git help revisions)
+   bisect     Use binary search to find the commit that introduced a bug
+   grep       Print lines matching a pattern
+   log        Show commit logs
+   show       Show various types of objects
+   status     Show the working tree status
+
+grow, mark and tweak your common history
+   branch     List, create, or delete branches
+   checkout   Switch branches or restore working tree files
+   commit     Record changes to the repository
+   diff       Show changes between commits, commit and working tree, etc
+   merge      Join two or more development histories together
+   rebase     Reapply commits on top of another base tip
+   tag        Create, list, delete or verify a tag object signed with GPG
+
+collaborate (see also: git help workflows)
+   fetch      Download objects and refs from another repository
+   pull       Fetch from and integrate with another repository or a local branch
+   push       Update remote refs along with associated objects
+
+'git help -a' and 'git help -g' list available subcommands and some
+concept guides. See 'git help <command>' or 'git help <concept>'
+to read about a specific subcommand or concept.
+
+C:\Mehul\Local_GitRepo>git pull origin master
+remote: Enumerating objects: 4, done.
+remote: Counting objects: 100% (4/4), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+From https://github.com/pandyamehul/StartGitLvl1
+ * branch            master     -> FETCH_HEAD
+   4c206ba..c68af44  master     -> origin/master
+Updating 4c206ba..c68af44
+Fast-forward
+ File2 | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 File2
+
+C:\Mehul\Local_GitRepo>git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+C:\Mehul\Local_GitRepo>git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+C:\Mehul\Local_GitRepo>git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   LearnGitBasics.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        File3_Local.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+C:\Mehul\Local_GitRepo>git pull origin master
+From https://github.com/pandyamehul/StartGitLvl1
+ * branch            master     -> FETCH_HEAD
+Already up to date.
+
+C:\Mehul\Local_GitRepo>git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   LearnGitBasics.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        File3_Local.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+C:\Mehul\Local_GitRepo>git push -u origin master
+Everything up-to-date
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+C:\Mehul\Local_GitRepo>git add *.txt
+
+C:\Mehul\Local_GitRepo>git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   File3_Local.txt
+        modified:   LearnGitBasics.txt
+
+
+C:\Mehul\Local_GitRepo>git commit -m "#8: Updated File LearnGitBasic.txt and added new file File3.txt"
+[master 6731a83] #8: Updated File LearnGitBasic.txt and added new file File3.txt
+ 2 files changed, 7 insertions(+)
+ create mode 100644 File3_Local.txt
+
+C:\Mehul\Local_GitRepo>git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+C:\Mehul\Local_GitRepo>git push -u origin master
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 574 bytes | 191.00 KiB/s, done.
+Total 4 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/pandyamehul/StartGitLvl1.git
+   c68af44..6731a83  master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+C:\Mehul\Local_GitRepo>git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+C:\Mehul\Local_GitRepo>git remote remove
+usage: git remote remove <name>
+
+
+C:\Mehul\Local_GitRepo>git remote remove origin
+
+C:\Mehul\Local_GitRepo>git status
+On branch master
+nothing to commit, working tree clean
+
+C:\Mehul\Local_GitRepo>git remote add origin https://github.com/pandyamehul/StartGit_Lvl2.git
+
+C:\Mehul\Local_GitRepo>git status
+On branch master
+nothing to commit, working tree clean
+
+C:\Mehul\Local_GitRepo>git push -u origin master
+To https://github.com/pandyamehul/StartGit_Lvl2.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/pandyamehul/StartGit_Lvl2.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+C:\Mehul\Local_GitRepo>git pull origin master
+warning: no common commits
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+From https://github.com/pandyamehul/StartGit_Lvl2
+ * branch            master     -> FETCH_HEAD
+ * [new branch]      master     -> origin/master
+fatal: refusing to merge unrelated histories
+
+C:\Mehul\Local_GitRepo>git status
+On branch master
+nothing to commit, working tree clean
+
+C:\Mehul\Local_GitRepo>git pull origin master --allow-unrelated-histories
+From https://github.com/pandyamehul/StartGit_Lvl2
+ * branch            master     -> FETCH_HEAD
+Merge made by the 'recursive' strategy.
+ README.md | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README.md
+
+C:\Mehul\Local_GitRepo>git push -u origin master
+Enumerating objects: 29, done.
+Counting objects: 100% (29/29), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (23/23), done.
+Writing objects: 100% (28/28), 4.56 KiB | 583.00 KiB/s, done.
+Total 28 (delta 8), reused 9 (delta 2)
+remote: Resolving deltas: 100% (8/8), done.
+To https://github.com/pandyamehul/StartGit_Lvl2.git
+   5688642..1ff9b66  master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+C:\Mehul\Local_GitRepo>git remote remove origin
+
+C:\Mehul\Local_GitRepo>git remote add origin https://github.com/pandyamehul/StartGitLvl1.git
+
+C:\Mehul\Local_GitRepo>git status
+On branch master
+nothing to commit, working tree clean
+
+C:\Mehul\Local_GitRepo>git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   LearnGitBasics.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+C:\Mehul\Local_GitRepo>git add *.txt *.md
+
+C:\Mehul\Local_GitRepo>git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        modified:   LearnGitBasics.txt
+
+
+C:\Mehul\Local_GitRepo>git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        modified:   LearnGitBasics.txt
+
+
+C:\Mehul\Local_GitRepo>git add *.md
+
+C:\Mehul\Local_GitRepo>git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        modified:   LearnGitBasics.txt
+
+
+C:\Mehul\Local_GitRepo>git commit -m "#9: Updated File LearnGitBasic.txt and added new file Readme.MD"
+[master 456020a] #9: Updated File LearnGitBasic.txt and added new file Readme.MD
+ 1 file changed, 13 insertions(+)
+
+C:\Mehul\Local_GitRepo>git status
+On branch master
+nothing to commit, working tree clean
+
+C:\Mehul\Local_GitRepo>git push -u origin master
+Enumerating objects: 10, done.
+Counting objects: 100% (10/10), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (8/8), 1.59 KiB | 324.00 KiB/s, done.
+Total 8 (delta 3), reused 0 (delta 0)
+remote: Resolving deltas: 100% (3/3), completed with 2 local objects.
+To https://github.com/pandyamehul/StartGitLvl1.git
+   6731a83..456020a  master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+C:\Mehul\Local_GitRepo>

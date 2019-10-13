@@ -1,0 +1,79 @@
+Ref. video - https://www.youtube.com/watch?v=c3482qAzZLQ&t=891s
+
+Step# 1 - Created local Git Repository Folder on ==> C:\Mehul\Local_GitRepo
+Step# 2 - Open Git CMD and nevigate to the local git folder initialize local folder with - "git init" command
+Step# 3 - Create local file save under the local folder with some text.
+Step# 4 - now check status of the local repository "git status" will show file is there under the stage area.
+Step# 4.1 - Run command to add file to track --> git add 20191013_DemoFile1.txt (to add all file use .)
+Step# 5 - Run command git config --global user.email "pandya.mehul@live.com"
+Step# 6 - run command git commit -m "First Commit"
+
+###### this is 1st commit #####
+
+> run command "git status"
+> run command "git log" to check the status.
+
+> create new file under the same local folder "File1.txt"
+> update the current file
+> now check git status you will see "Unstaged change" as well as "untracked files"
+> to stage these changes use command git add *.txt"
+
+###### this is 2nd commit #####
+> run command git commit "2nd Commit: Updated File LearnGitBasic.txt and added new file File1.txt"
+> run command "git status" and then "git log"
+> run command git commit "3rd Commit: Updated File LearnGitBasic.txt" 
+
+###### this is 3rd commit #####
+
+> Now link to local repo to Git remote repo
+> run command git remote add origin https://github.com/pandyamehul/LearnGitBasic_1.git
+> this will link local to remote repo
+> run command to verify the link git remote -v
+> to push change to remote repo run command git push -u origin master
+
+> now make update and baseline code use below commands
+> git add *.txt"
+> git commit "#4 Commit: Updated File LearnGitBasic.txt"
+> git push -u origin master
+
+###### this is #4 commit #####
+
+> updated file online/remote git directly.
+
+###### this is #5 commit #####
+
+> Now remote/online version is ahead of local version
+> to sync changes there are two ways "Fetch + Merge" using below commands.
+
+> #Option 1#
+> git fetch origin master
+> git merge origin/master
+> above command align the remote/online version with local version.
+
+> #Option 2#
+> git pull origin master
+
+Option 1 is useful when there pull is failed. By fetch you can get the master branch and then compare both the branches and then merge.
+
+###### this is #6 commit #####
+
+> created "File2" on remote/online git and then pull the latest branch 
+> commit change online
+
+###### this is #7 commit #####
+
+> Created another GitHub repo called "StartGit_Lvl2"
+> Alternate way to create repo online and then sync 
+> Remove the reference of Old repo using command  "git remote remove origin"
+> pointed to new repo using command "git remote add origin https://github.com/pandyamehul/StartGit_Lvl2.git"
+> now try to push local files to remote using command "git push -u origin master"
+> this is because remote have readme file which is not there on local and local have other files i.e. out of sync
+> got error now to sync remove to local used command "git pull origin master"
+> got further error --> fatal: refusing to merge unrelated histories
+> to resolve error used command "git pull origin master --allow-unrelated-histories"
+> and then pushed changes to new repository with command >> git push -u origin master
+> this merged earlier branch with new repository
+
+###### this is #8 commit #####
+
+
